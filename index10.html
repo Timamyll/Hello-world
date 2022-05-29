@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Основы HTML</title>
+  </head>
+  <body>
+    <!-- Простая форма -->
+    <form action="formHandler.php" name="simple form" autocomplete="on">
+
+      <input type="text" /><br>
+
+      <select>
+        <option value="FRONT-END">FRONT-END</option>
+        <option value="BACK-END">BACK-END</option>
+      </select><br>
+
+      <textarea name="text" rows="10"></textarea><br>
+
+      <input type="submit"><br>
+    </form>
+    <hr>
+
+    <!-- Набор полей и метка -->
+    <form action="formHandler.php" name="simple form2">
+
+      <fieldset>
+        Simle form legend</
+
+      <input type="text" /><br>
+
+      <select>
+        <option value="FRONT-END">FRONT-END</option>
+        <option value="BACK-END">BACK-END</option>
+      </select><br>
+
+      <textarea name="text" rows="10" cols="45"></textarea><br>
+
+      </fieldset>
+    </form>
+    <hr>
+
+    <!-- Внутренний набор полей и метка -->
+    <form action="formHandler.php"name="simple form3">
+
+      <fieldset>
+        <legend>Personal data</legend>
+        <input type="text" /><br>
+        <select>
+          <option value="FRONT-END">FRONT-END</option>
+          <option value="BACK-END">BACK-END</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>Personal Messange</legend>
+        <textarea name="text" rows="10" cols="45"></textarea>
+      </fieldset>
+
+      <input type="submit"> <br>
+    </form>
+    <hr>
+
+    <!-- Метка элемента формы -->
+    <label for="username">Username</label>
+    <input id="username"><br>
+
+    <label>
+    password
+    <input type="password">
+    </label>
+    <hr>
+
+    <!-- Форма результатов -->
+    <form action="formHandler.php" name="simple form3">
+
+    <fieldset>
+      <legend>Personal data</legend>
+      <label for="name">Your name</label>
+      <input type="text" id="name" /><br>
+      <label for="speciality">Choose your speciality</label>
+      <select id="speciality">
+        <option value="Front-end">Front-end</option>
+        <option value="Back-end">Back-end</option>
+      </select><br>
+    </fieldset>
+
+    <fieldset>
+      <legend>Personal Message</legend>
+      <label for="message">Enter your message</label>
+      <textarea id="message" rows="10" cols="45" name="text"></textarea><br>
+    </fieldset>
+
+    <input type="submit"><br>
+
+  </form>
+  <hr>
+
+  <!--  элемент Textarea -->
+  <textarea rows="10" cols="45"></textarea><br>
+  <textarea rows="5" cols="20" name="test"></textarea><br>
+  <textarea rows="5" cols="20" autofocus></textarea><br>
+  <textarea rows="5" cols="20" disabled></textarea><br>
+  <textarea rows="5" cols="20" readonly>This text you can't change</textarea><br>
+  <textarea rows="5" cols="20" placeholder="your message..."></textarea><br>
+  <textarea rows="5" cols="20" maxlength="5"></textarea><br>
+  <textarea rows="5" cols="20" required></textarea><br>
+  <hr>
+
+  <!-- Обязательный атрибут -->
+  <form>
+    <textarea rows="5" cols="20" required></textarea><br>
+    <input type="submit" value="Send">
+  </form>
+  <hr>
+
+  <!-- выбор -->
+  <select>
+    <option value="Front-end">Front-end</option>
+    <option value="Back-end">Back-end</option>
+  </select>
+  <hr>
+
+  <!-- Выберите с помощью optgroup -->
+  <select>
+    <optgroup label="Speciality">
+      <option value="Front-end">Front-end</option>
+      <option value="Back-end">Back-end</option>
+    </optgroup>
+
+    <optgroup label="Direction">
+      <option value="Mobile">Mobile development</option>
+      <option value="Node">Node.js development</option>
+    </optgroup>
+  </select>
+  <hr>
+
+  <!-- Множественный выбор -->
+  <select multiple>
+    <option value="Front-end">Front-end</option>
+    <option value="Back-end">Back-end</option>
+  </select>
+  <hr>
+
+  <!-- Различный выбор -->
+  <select>
+    <option value="Front-end">Front-end</option>
+    <option value="Back-end" label="Back-end">
+    <option value="sel" selected>Selected</option>
+    <option value="dis" disabled>Disabled</option>
+  </select>
+  <hr>
+
+  </body>
+</html>
