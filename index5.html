@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Основы HTML</title>
+  </head>
+  <body>
+    <!-- Простое изображение -->
+    <img src="https://picsum.photos/300/300" alt="Простое изображение">
+    <!-- Отзывчивое изображение -->
+    <picture>
+      <source media="(min-width 1024px)" srcet="https://picsum.photos/600/600">
+      <source media="(min-width 768px)" srcet="https://picsum.photos/300/300">
+      <source media="(min-width 360px)" srcet="https://picsum.photos/100/100">
+      <img src="https://picsum.photos/300/300" alt="Just image" />
+    </picture>
+
+    <!-- Изображение с семантическим описанием -->
+    <figure>
+      <img src="https://picsum.photos/300/300" alt="Just image" />
+      <figcaption>It is a simple description for a picture abov</figcaption>
+    </figure>
+    <!-- Изображение с семантическим описанием -->
+    <figure>
+      <img src="https://picsum.photos/300/300" alt="Just image" />
+      <img src="https://picsum.photos/300/300" alt="Just image" />
+      <img src="https://picsum.photos/300/300" alt="Just image" />
+      <figcaption>
+        It is a simple description for a couple pictures above.It is a simple description for a couple pictures above.It is a simple description for a couple pictures above
+    </figcaption>
+  </figure>
+
+</body>
+</html>

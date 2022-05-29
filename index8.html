@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Основы HTML</title>
+  </head>
+  <body>
+      <!-- Абривиатуры -->
+      <abbr title="Hypertext Markup Language">HTML</abbr>
+      был создан в 1993 году
+      <hr>
+
+      <!-- Список опций -->
+      <input list="list">
+      <datalist id="list">
+        <option value="Front-end"></option>
+        <option value="back-end"></option>
+        <option value="full-stack"></option>
+      </datalist>
+      <hr>
+
+      <!-- метр -->
+      <meter value="0" max="100" low="10" high="60">Прогресс курса</meter><br>
+      <meter value="20" max="100" low="40" high="60">Прогресс курса</meter><br>
+      <meter value="80" max="100" low="10" high="60">Прогресс курса</meter><br>
+      <meter value="100" max="100">Прогресс курса</meter>
+      <hr>
+
+      <!-- Индикатор выполнения -->
+      <progress value="30" max="100"></progress>
+      <hr>
+
+      <!-- Нет тега скриптов -->
+      <noscript>Пожалуйста включите скрипты в вашем браузере</noscript>
+
+      <!-- Помеченный текст -->
+      <mark>Помеченно</mark>
+      <h2>знать html <mark>семантику</mark> важно</h2>
+      <hr>
+
+      <canvas id="examle" width="100" height="100"></canvas>
+      <script>
+        const drawingCanvas = document.getElementByid('exaple');
+        if(drawingCanvas && drawingCanvas.getContext) {
+          const context = drawingCanvas.getContext('2d');
+          context.fillStyle = "#000";
+          context.beginPath();
+          context.arc(100,100,100,0,Math.PI*2,true);
+          context.closePath();
+          context.stroke();
+          context.fill();
+        }
+      </script>
+    </body>
+</html>

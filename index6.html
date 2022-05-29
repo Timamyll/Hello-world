@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Basics</title>
+    <style>
+      tably,
+      table * {
+        borden: 1px solid #000;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Минимальная допустимая разметка для таблиц -->
+    <table>
+      <tr>
+        <td>Front-end</td>
+        <td>Bask-end</td>
+        <td>Full-stack</td>
+        <td>QA</td>
+      </tr>
+    </table>
+    <hr>
+
+    <!-- Строка таблицы с данными -->
+    <table>
+      <tr>
+        <td>Front-end</td>
+        <td>Bask-end</td>
+        <td>Full-stack</td>
+        <td>QA</td>
+      </tr>
+    </table>
+    <hr>
+
+    <!-- Столбцы таблицы с данными -->
+    <table>
+      <tr>
+        <td>Front-end</td>
+      </tr>
+      <tr>
+        <td>Back-end</td>
+      <tr>
+        <td>Full-stack</td>
+      </tr>
+      <tr>
+        <td>QA</td>
+      </tr>
+    </table>
+    <hr>
+
+    <!-- Простой пример таблицы -->
+    <table>
+      <tr>
+        <td>Front-end</td>
+        <td>1 person</td>
+      </tr>
+      <tr>
+        <td>Back-end</td>
+        <td>7 person</td>
+      </tr>
+      <tr>
+        <td>Full stack</td>
+        <td>2 person</td>
+        <tr>
+          <td>QA</td>
+          <td>5 person</td>
+        </tr>
+    </table>
+    <hr>
+
+    <!-- Таблица сематичестим разделам-->
+    <table>
+
+      <caption>Team members list</caption>
+
+      <thead>
+        <tr>
+          <td>Speciality</td>
+          <td>Quantity</td>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>Front-end</td>
+          <td>1 person</td>
+        </tr>
+        <tr>
+          <td>Back-end</td>
+          <td>7 person</td>
+        </tr>
+        <tr>
+          <td>Full-stack</td>
+          <td>2 person</td>
+        </tr>
+        <tr>
+          <td>QA</td>
+          <td>5 person</td>
+        </tr>
+    </tbody>
+        <tfoot>
+          <tr>
+            <td></td>
+            <td>15</td>
+          </tr>
+        </tfoot>
+    </table>
+
+    <hr>
+    <!-- Colspan в tfoot и tr теге для головы таблицы -->
+    <table>
+      <caption>Team nambers</caption>
+      <thead>
+        <tr>
+          <th>Speciality</th>
+          <th>Quantity</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>Front-end</td>
+          <td>1 person</td>
+        </tr>
+        <tr>
+          <td>Back-end</td>
+          <td>7 person</td>
+        </tr>
+        <tr>
+          <td>Full-stack</td>
+          <td>2 person</td>
+        </tr>
+        <tr>
+          <td>QA</td>
+          <td>5 person</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="2">15</td>
+        </tr>
+      </tfoot>
+    </table>
+    <hr>
+    <table>
+      <thead>
+        <tr>
+          <th>Quantity</th>
+          <th>Speciality</th>
+        </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Front-end</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Back-end</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Full-stack</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>QA</td>
+            <td></td>
+          </tr>
+
+        </tbody>
+        <tfoot>
+          <tr>
+            <td></td>
+            <td rowspan="4">15</td>
+          </tr>
+        </tfoot>
+    </table>
+  </body>
+</html>
